@@ -6,23 +6,18 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.example.dreambarber.databinding.ActivityQuartaTelaBinding
-import com.example.dreambarber.databinding.ActivityQuintaTelaBinding
+import com.example.dreambarber.databinding.ActivityPerfilBinding
 
-class QuintaTela : AppCompatActivity() {
-    private lateinit var binding: ActivityQuintaTelaBinding
+class Perfil : AppCompatActivity() {
+    private lateinit var binding: ActivityPerfilBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityQuintaTelaBinding.inflate(layoutInflater)
+        binding = ActivityPerfilBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         binding.icHome.setOnClickListener {
             val navegarHome = Intent(this, SegundaTela::class.java)
-            startActivity(navegarHome)
-        }
-        binding.icPerfil.setOnClickListener {
-            val navegarPerfil = Intent(this, Perfil::class.java)
-            startActivity(navegarPerfil)
+            startActivity(navegarHome )
         }
     }
 }

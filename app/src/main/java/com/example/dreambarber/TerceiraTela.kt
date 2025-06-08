@@ -30,7 +30,7 @@ class TerceiraTela : AppCompatActivity() {
             startActivity(navegarHome)
         }
         binding.icPerfil.setOnClickListener {
-            val navegarPerfil = Intent(this, SextaTela::class.java)
+            val navegarPerfil = Intent(this, Perfil::class.java)
             startActivity(navegarPerfil)
         }
 
