@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">DreamBarber</string>
+    <string name="logo_description">Logo da barbearia</string>
+    <string name="home_button">Botão para voltar à tela inicial</string>
+    <string name="business_card">Business Card</string>
+    <string name="created_by">Created By DreamCode</string>
+    <string name="devs">Devs</string>
+    <string name="github_augusto">Augusto: https://github.com/AugustoSanttana</string>
+    <string name="github_lucas">Lucas: https://github.com/lucas-moia</string>
+    <string name="github_vinicius">Vinicius: https://github.com/Vinijanini</string>
+</resources>

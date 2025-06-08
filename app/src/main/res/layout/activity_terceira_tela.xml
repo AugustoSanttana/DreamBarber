@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TerceiraTela">
+
+    <!-- Título -->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Serviços"
+        android:textColor="#09304D"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp" />
+
+    <!-- Botão Cabelo -->
+
+    <!-- Botão Barba -->
+    <Button
+        android:id="@+id/btnCabelo"
+        android:layout_width="254dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="108dp"
+        android:backgroundTint="#09304D"
+        android:fontFamily="sans-serif"
+        android:text="Cabelo"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView" />
+
+    <Button
+        android:id="@+id/btnBarba"
+        android:layout_width="254dp"
+        android:layout_height="80dp"
+        android:backgroundTint="#09304D"
+        android:fontFamily="sans-serif"
+        android:text="Barba"
+        android:textSize="24sp"
+        app:layout_constraintTop_toBottomOf="@id/btnCabelo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- Botão Cabelo + Barba -->
+    <Button
+        android:id="@+id/btnCabeloBarba"
+        android:layout_width="254dp"
+        android:layout_height="84dp"
+        android:backgroundTint="#09304D"
+        android:fontFamily="sans-serif"
+        android:text="Cabelo + Barba"
+        android:textSize="24sp"
+        app:layout_constraintTop_toBottomOf="@id/btnBarba"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- Ícone Home no canto inferior esquerdo -->
+    <ImageView
+        android:id="@+id/icHome"
+        android:layout_width="85dp"
+        android:layout_height="84dp"
+        android:layout_margin="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/home_ic" />
+
+    <!-- Ícone Perfil no canto inferior direito -->
+    <ImageView
+        android:id="@+id/icPerfil"
+        android:layout_width="85dp"
+        android:layout_height="84dp"
+        android:layout_margin="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/pessoa_ic" />
+</androidx.constraintlayout.widget.ConstraintLayout>
